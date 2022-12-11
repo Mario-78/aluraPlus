@@ -49,8 +49,8 @@ body {
 }
 
 .container__img--combo:hover{
-    width: 348px;
-    height: 100px;
+    width: 368px;
+    height: 120px;
     transition: 0.5s;
 }
 
