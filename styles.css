@@ -42,10 +42,16 @@ body {
     position: absolute;
 }
 
-.container__img-combo {
+.container__img--combo {
     width: 348px;
     height: 100px;
     margin: 249px 0 0 178px;
+}
+
+.container__img--combo:hover{
+    width: 348px;
+    height: 100px;
+    transition: 0.5s;
 }
 
 .container__botoes {
