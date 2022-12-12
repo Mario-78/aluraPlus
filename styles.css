@@ -274,7 +274,7 @@ body {
         text-align: center;
         width: 350px;
         height: 165px;
-        padding: 25px;
+        padding: 0;
     }
     .container__img--1 {
         display: flex;
