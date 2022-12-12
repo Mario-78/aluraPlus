@@ -15,21 +15,17 @@ body {
     font-weight: 400;
 }
 
-.principal {
+.container {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: auto auto;
+.principal {
+    padding: 125px 0 0 54px;
 }
 
 .container__titulo {
-    position: absolute;
-    margin: 125px 0 0 54px;
     width: 588px;
     height: 102px;
     font-weight: 700;
@@ -38,17 +34,19 @@ body {
     text-align: center;
 }
 
-.container__img {
-    position: absolute;
+.container__img--1 {
+    justify-content: center;
+    width: 588px;
+    display: flex;
+    padding-top: 22px;
 }
 
 .container__img--combo {
     width: 348px;
     height: 100px;
-    margin: 249px 0 0 178px;
 }
 
-.container__img--combo:hover{
+.container__img--combo:hover {
     width: 368px;
     height: 120px;
     transition: 0.5s;
@@ -57,28 +55,21 @@ body {
 .container__botoes {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 0px;
     gap: 16px;
-    position: absolute;
-    width: 512px;
+    width: 588px;
     height: 128px;
-    left: 92px;
-    top: 403px;
+    padding-top: 54px;
+    align-items: center;
 }
 
-.container__botao {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
+.botao {
     padding: 16px;
-    gap: 16px;
     width: 512px;
     height: 56px;
     border-radius: 8px;
     background-color: var(--botao-azul);
     color: var(--branco-principal);
-    display: block;
     text-align: center;
 }
 
@@ -88,50 +79,46 @@ body {
 }
 
 .container__aviso {
-    position: absolute;
-    width: 380px;
+    width: 588px;
     height: 15px;
-    left: 161px;
-    top: 541px;
     font-size: 12px;
     line-height: 15px;
+    color: var(--cinza-secundario);
+    text-align: center;
+}
+
+.segundo {
+    width: 1200px;
+    padding: 219px 0 0 165px;
     display: flex;
     align-items: center;
-    text-align: center;
-    color: var(--cinza-secundario);
+    justify-content: space-between;
 }
 
-.container__img--monitor {
+.container__img--2 {
+    width: 588px;
+    height: 560px;
+}
+
+.img--plataformas {
     width: 498px;
     height: 560px;
-    left: 165px;
-    top: 775px;
-}
-
-.container__img--smartfone {
-    height: 227px;
-    width: 144px;
-    left: 181px;
-    top: 1064px;
 }
 
 .container__text {
     display: flex;
+    text-align: justify;
     flex-direction: column;
     gap: 16px;
-    position: absolute;
     width: 588px;
     height: 144px;
 }
 
-.container__text--1 {
-    left: 732px;
-    top: 998px;
-}
-
-.container__text--2 {
-    left: 120px;
-    top: 1584px;
+.terceiro {
+    padding: 151px 0 0 120px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
 }
 
 .container__subtitulo {
@@ -150,78 +137,93 @@ body {
 .container__botao--pequeno {
     width: 166px;
     height: 32px;
-    left: 120px;
-    top: 1672px;
     padding-bottom: 0;
 }
 
-.container__img--image7 {
-    width: 447.94px;
-    height: 241.99px;
-    left: 778px;
-    top: 1486px;
+.container__img--telas {
+    width: 496px;
+    height: 338.96px;
 }
 
-.container__img--image8 {
-    width: 447.94;
-    height: 241.99px;
-    left: 826.06px;
-    top: 1582.97px;
+.quarto {
+    margin: 226.04px 0 0 141px;
+    display: flex;
+    align-items: center;
+    gap: 44px;
 }
 
 .container__img--notebook {
     width: 547px;
     height: 324px;
-    left: 141px;
-    top: 2051px;
 }
 
-.container__text--3 {
-    left: 732px;
-    top: 2156px;
+.quinto {
+    margin: 264px 131px 0 155px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.container__img--grupo-de-dispositivos {
-    position: absolute;
+.container__subtitulo--h3 {
+    display: flex;
     width: 1154px;
-    height: 344px;
-    left: 155px;
-    top: 2639px;
+    justify-content: center;
+}
+
+.container__img--dispositivos {
+    display: flex;
+    width: 1154px;
+    height: 245px;
+    justify-content: space-between;
+}
+
+.icon__descricao {
+    font-size: 32px;
+    font-weight: 700px;
+}
+
+.icon__mais__descricao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon--tv {
+    width: 339px;
+    height: 192px;
 }
 
 .footer {
-    position: absolute;
+    margin: 139px 0 105px 132px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1200px;
     height: 207.99px;
-    left: 120px;
-    top: 0px;
+}
+
+.contyainer__alura--logo {
+    display: flex;
+    justify-content: space-between;
 }
 
 .alura__logo {
-    position: absolute;
     width: 102px;
     height: 35.28px;
-    left: 560px;
-    top: 3122px;
+    margin-bottom: 40.71px;
 }
 
 .links {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 0;
-    gap: 16px;
-    position: absolute;
+    justify-content: space-between;
     width: 1124px;
     height: 24px;
-    left: 158px;
-    top: 3203.99px;
     font-size: 16px;
-    font-weight: 400px;
     line-height: 150%;
+    margin-bottom: 24px;
 }
 
 .links a:hover {
@@ -234,10 +236,8 @@ body {
 }
 
 .container__footer--text {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     padding: 0;
     gap: 16px;
@@ -245,6 +245,352 @@ body {
     font-size: 14px;
     line-height: 150%;
     height: 84px;
-    left: 120px;
-    top: 3251px;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-image: none;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0;
+    }
+    .container__titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 350px;
+        height: 165px;
+        padding: 25px;
+    }
+    .container__img--1 {
+        display: flex;
+        width: 375px;
+        height: 130px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .container__botoes {
+        width: 350px;
+        height: 130px;
+    }
+    .botao {
+        width: 320px;
+        height: 23px;
+    }
+    .segundo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .container__img--2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 325px;
+        padding: 25px;
+    }
+    .img--plataformas {
+        width: 250px;
+        height: 320px;
+    }
+    .container__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        height: 120px;
+        margin: 25px;
+    }
+    .container__subtitulo {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .container__descricao {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: justify;
+        padding: 25px;
+    }
+    .terceiro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .container__img--3 {
+        margin: 25px;
+    }
+    .container__botao--pequeno {
+        width: 125px;
+        height: 23px;
+        padding: 25px;
+        margin: 25px;
+    }
+    .container__img--telas {
+        width: 280px;
+        height: 260px;
+        margin: 80px;
+    }
+    .quarto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 445px;
+        padding: 0;
+        margin: 0;
+    }
+    .container__img--4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: -80px;
+        width: 100vw;
+    }
+    .container__img--notebook {
+        width: 380px;
+        height: 200px;
+    }
+    .quinto {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 800px;
+        padding: 0;
+        margin: 0px;
+    }
+    .container__subtitulo--h3 {
+        width: 100vw;
+        text-align: center;
+    }
+    .conteiner__alura--logo {
+        text-align: center;
+    }
+    .container__img--dispositivos {
+        flex-direction: column;
+        width: 100vw;
+        height: 700px;
+        align-items: center;
+    }
+    .icon--tv {
+        width: 350px;
+        height: 192px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 600px;
+        padding: 0;
+        margin: 0;
+    }
+    .alura__logo {
+        margin: 0;
+        padding: 25px;
+    }
+    .links {
+        flex-direction: column;
+        padding: 25px;
+        height: 168px;
+    }
+    .container__footer--text {
+        width: 100vw;
+        height: 170px;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-image: none;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0;
+    }
+    .container__titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 350px;
+        height: 165px;
+        padding: 25px;
+    }
+    .container__img--1 {
+        display: flex;
+        width: 375px;
+        height: 130px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .container__botoes {
+        width: 350px;
+        height: 130px;
+    }
+    .botao {
+        width: 320px;
+        height: 23px;
+    }
+    .segundo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .container__img--2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 325px;
+        padding: 25px;
+    }
+    .img--plataformas {
+        width: 250px;
+        height: 320px;
+    }
+    .container__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        height: 120px;
+        margin: 25px;
+    }
+    .container__subtitulo {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .container__descricao {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: justify;
+        padding: 25px;
+    }
+    .terceiro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .container__img--3 {
+        margin: 25px;
+    }
+    .container__botao--pequeno {
+        width: 125px;
+        height: 23px;
+        padding: 25px;
+        margin: 25px;
+    }
+    .container__img--telas {
+        width: 280px;
+        height: 260px;
+        margin: 80px;
+    }
+    .quarto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 445px;
+        padding: 0;
+        margin: 0;
+    }
+    .container__img--4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: -80px;
+        width: 100vw;
+    }
+    .container__img--notebook {
+        width: 380px;
+        height: 200px;
+    }
+    .quinto {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 800px;
+        padding: 0;
+        margin: 0px;
+    }
+    .container__subtitulo--h3 {
+        width: 100vw;
+        text-align: center;
+    }
+    .conteiner__alura--logo {
+        text-align: center;
+    }
+    .container__img--dispositivos {
+        flex-direction: column;
+        width: 100vw;
+        height: 700px;
+        align-items: center;
+    }
+    .icon--tv {
+        width: 350px;
+        height: 192px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 600px;
+        padding: 0;
+        margin: 0;
+    }
+    .alura__logo {
+        margin: 0;
+        padding: 25px;
+    }
+    .links {
+        flex-direction: column;
+        padding: 25px;
+        height: 168px;
+    }
+    .container__footer--text {
+        width: 100vw;
+        height: 170px;
+        padding: 25px;
+    }
 }
